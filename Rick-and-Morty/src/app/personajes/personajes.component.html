@@ -1,0 +1,47 @@
+
+<div id="container" *ngFor="let personaje of especie">	
+  
+    <div class="product-details" div style=text-align:center>
+    <br>
+    <h1>{{personaje.name}}</h1>
+    <p>{{personaje.species}}</p>
+    <p>{{personaje.status}}</p>
+    <br>
+    <br>
+    <button type="button" class="btn btn-info" (click)="algo(personaje)">Detalle</button>
+    
+    </div>    
+  
+
+    <div class="product-image">
+	
+      <img src="{{personaje.image}}">
+      
+    <div class="info">
+      <h1>Detalles</h1>
+      <ul>
+        <li><strong>Nombre: </strong>{{personaje.name}}</li>
+        <li><strong>Especie: </strong>{{personaje.species}}</li>
+        <li><strong>Genero: </strong>{{personaje.gender}}</li>
+        <li><strong>Estatus: </strong>{{personaje.status}}</li>
+        <li><strong>Origen: </strong>{{personaje.origin.name}}</li>
+      </ul>
+    </div>
+    </div>
+  
+	
+    
+
+
+  <!--  Codigo de prueba para obtener la informacion  
+<div class="card" style="width: 18rem;"*ngFor="let personaje of especie">
+  <img src="{{personaje.image}}">
+  <div class="card-body">
+    <h5 class="card-title">{{personaje.name}}</h5>
+    <p>{{personaje.species}}</p>
+    <p>{{personaje.status}}</p>
+    <button type="button" class="btn btn-info"  (click)="algo(personaje)">Detalle</button>
+  </div>
+</div>
+ -->
+
